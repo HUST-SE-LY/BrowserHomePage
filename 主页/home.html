@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body id="body">
+<audio src="html/music/誰にだって訳がある.mp3" class="audio" preload="auto"></audio>
+
+<div class="time"></div>
+<div class="quote">每天都会有奇迹发生</div>
+<form class="search" action="https://cn.bing.com/search" method="get" target="_blank" autocomplete="off">
+  <div class="search_img">
+      <img src="html/image/Bing-Logo.png" class="img bing">
+      <img src="html/image/google.png" class="img google">
+  </div>
+  <input type="text" class="search_box" name="q" placeholder="">
+  <div class="search_select">
+  </div>
+</form>
+<div class="logo">
+    {{link|safe}}
+</div>
+<div class="link_aside">
+    <form action="/" method="post" autocomplete="off">
+        <input type="text" class="url_input" name="link_url" placeholder="URL" value="https://">
+        <input type="text" class="name_input" name="link_name" placeholder="名称">
+        <input type="submit" class="submit">
+    </form>
+</div>
+
+<div class="mark1"><img src="html/image/angle-left-free-icon-font.png" class="arrow_mark1"></div>
+<div class="aside">
+    <div class="mark2"><img src="html/image/angle-left-free-icon-font.png" class="arrow_mark2"></div>
+    <div class="target">
+        <div class="write_head">写下你的规划</div>
+        <form action="/" method="post" class="form2" autocomplete="off">
+            <input type="text" class="target_input" name="goal">
+        </form>
+        <div class="goal_content">
+            {{title|safe}}
+        </div>
+
+    </div>
+</div>
+<div class="bottom">
+    <div class="mark3"><img src="html/image/angle-left-free-icon-font.png" class="arrow_mark3"></div>
+    <div class="player">
+        <div class="next"><img src="html/image/forward-free-icon-font%20(1).png" class="player_img next_img"></div>
+        <div class="pause"><img src="html/image/play-free-icon-font%20(1).png" class="player_img pause_img"></div>
+        <div class="last"><img src="html/image/rewind-free-icon-font%20(1).png" class="player_img last_img"></div>
+        <div class="loop"><img src="html/image/单曲循环_32.png" class="play_select"></div>
+        <div class="normal"><img src="html/image/列表循环%20(1).png" class="play_select"></div>
+        <div class="random"><img src="html/image/随机播放.png" class="play_select"></div>
+        <div class="music_name"></div>
+        <div class="music_list"></div>
+        <div class="music_time"></div>
+        <div class="volume"><img src="html/image/声音开.png" class="volume_img"></div>
+        <div class="volume_list">
+            <div class="volume_ball"></div>
+        </div>
+        <div class="loading"><div class="loading_ball"></div></div>
+    </div>
+</div>
+<div class="menu">删除</div>
+<script src="script.js"></script>
+<script src="fire.js"></script>
+<script src="axios.min.js"></script>
+
+</body>
+</html>

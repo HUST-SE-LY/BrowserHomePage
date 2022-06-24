@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e6eef4;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -999999999999999999999999999999;
+}
+
+.search_img {
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    left: 37.5vw;
+    top: 20vh;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh -0.5vh 1vh #ffffff;
+    border-radius: 0.5vh;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.search_box {
+    border-radius: 1vh;
+    height: 5vh;
+    width: 15vw;
+    font-family: "Century Gothic", 幼圆;
+    display: block;
+    position: absolute;
+    left: 42.5vw;
+    top: 20vh;
+    background: #e6eef4;
+    border: none;
+    outline: none;
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+    font-size: 2.5vh;
+    letter-spacing: 0.2vh;
+    text-align: left;
+    padding-left: 0.5vw;
+    transition: all 0.5s;
+}
+
+.img {
+    height: 3vh;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.google {
+    width: 4vh;
+    height: 4vh;
+    transform: translateX(0.6vh) translateY(-0.5vh);
+    cursor: pointer;
+}
+
+.time {
+    text-align: center;
+    font-family: "Century Gothic", 幼圆;
+    font-size: 4vw;
+    font-weight: lighter;
+    color: gray;
+    width: 20vw;
+    height: 5vw;
+    margin: 0 auto;
+    line-height: 5vw;
+    border-radius: 0vw 0vw 20vw 20vw;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh -0.5vh 1vh #ffffff;
+
+}
+
+.quote {
+    text-align: center;
+    font-family: "Century Gothic", 幼圆;
+    font-size: 2vw;
+    color: gray;
+    margin-top: 3vh;
+
+}
+
+.logo {
+    width: 40vw;
+    height: 10vw;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh -0.5vh 1vh #ffffff;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3vh;
+    padding: 3vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+    transition: height 0.5s 0.1s;
+    overflow-y: hidden;
+}
+
+.mark1 {
+    width: 4vw;
+    height: 4vw;
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh 0vh 1vh #ffffff;
+    content: "";
+    border-radius: 0 0 2vw 2vw;
+    transform: translateX(48vw);
+    cursor: pointer;
+}
+
+.logo_href {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 2vw;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh 0vh 1vh #ffffff;
+    margin: 0 auto;
+    font-family: "Century Gothic", 幼圆;
+    text-align: center;
+    line-height: 3vw;
+    cursor: pointer;
+}
+
+.logo_href:active {
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh 0vh 1vh #ffffff;
+}
+
+.logo_img {
+    height: 2vw;
+    margin-top: 0.5vw;
+
+}
+
+.link_aside {
+    width: 15vw;
+    height: 10vw;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh 0vh 1vh #ffffff;
+    border-radius: 1vw;
+    transition: all 0.2s;
+    opacity: 0%;
+    display: none;
+}
+
+.add_img {
+    width: 2vw;
+    margin: 0.5vw 0.5vw;
+
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.link_name {
+    text-align: center;
+    font-family: "Century Gothic", 幼圆;
+    line-height: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    color: gray;
+}
+
+.mark2 {
+    width: 4vw;
+    height: 4vw;
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh -0.5vh 1vh #ffffff;
+    content: "";
+    border-radius: 2vw 0 0 2vw;
+    position: absolute;
+    left: -4vw;
+    top: 26vh;
+    cursor: pointer;
+
+
+}
+
+.target {
+    width: 20vw;
+    height: 60vh;
+    box-shadow: 0.5vh 0.5vh 1vh #cdd4d9,
+    -0.5vh -0.5vh 1vh #ffffff;
+    position: relative;
+    border-radius: 3vh 0 0 3vh;
+    white-space: pre-line;
+    overflow: scroll;
+}
+
+.target::-webkit-scrollbar {
+    display: none;
+}
+
+.aside {
+    position: absolute;
+    top: 15vh;
+    right: -21vw;
+    transition: all 0.5s;
+}
+
+.target_input {
+    height: 3vh;
+    width: 5vw;
+    font-family: "Century Gothic", 幼圆;
+    border: none;
+    outline: none;
+    background: #e6eef4;
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+    margin: 0vh auto;
+    border-radius: 1vh;
+    display: block;
+    padding: 1vh;
+    transition: width 0.3s;
+    box-sizing: border-box;
+    color: gray;
+    letter-spacing: 0.1vh;
+    line-height: 3vh;
+    position: sticky;
+
+}
+
+.write_head {
+    text-align: center;
+    font-family: "Century Gothic", 幼圆;
+    color: gray;
+    line-height: 2vh;
+
+}
+
+.form2 {
+    height: 6vh;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+}
+
+.goal_content {
+    padding-left: 1vw;
+    width: 15vw;
+    padding-bottom: 1vw;
+    background: #e6eef4;
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+    margin: 0 auto;
+    font-family: "Century Gothic", 幼圆;
+    font-weight: lighter;
+    color: gray;
+    border-radius: 1vw;
+    font-size: 2vh;
+    line-height: 2vw;
+}
+
+.delete {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    background: #e6eef4;
+    border: none;
+    margin-left: 1vw;
+    position: absolute;
+    right: 1vw;
+    top: 0.25vw;
+    cursor: pointer;
+}
+
+.delete:active {
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+}
+
+.p {
+    position: relative;
+}
+
+.arrow_mark2 {
+    width: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+
+.arrow_mark1 {
+    width: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    transform: rotate(-90deg);
+    transition: all 0.3s;
+}
+
+.bottom {
+    position: absolute;
+    bottom: -10vh;
+    transition: all 0.5s;
+}
+
+.mark3 {
+    width: 4vw;
+    height: 4vw;
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh -0.5vh 1vh #ffffff;
+    content: "";
+    border-radius: 2vw 2vw 0 0;
+    cursor: pointer;
+    position: absolute;
+    top: -4vw;
+    left: 48vw;
+}
+
+.player {
+    width: 100vw;
+    height: 10vh;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    border-radius: 5vh 5vh 0 0;
+    position: relative;
+}
+
+.arrow_mark3 {
+    width: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.pause {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 2vh;
+    left: calc(50% - 3vh);
+    cursor: pointer;
+}
+
+.next {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 2vh;
+    left: calc(60% - 3vh);
+    cursor: pointer;
+}
+
+.last {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 2vh;
+    left: calc(40% - 3vh);
+    cursor: pointer;
+}
+
+.next:active {
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh -0.5vh 1vh #ffffff;
+}
+
+.last:active {
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh -0.5vh 1vh #ffffff;
+}
+
+.pause:active {
+    box-shadow: inset 0.5vh 0.5vh 1vh #cdd4d9,
+    inset -0.5vh -0.5vh 1vh #ffffff;
+}
+
+.player_img {
+    width: 4vh;
+    margin: 1vh 1vh;
+}
+
+.music_name {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 1vh;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 10vw;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 幼圆, 黑体;
+    color: gray;
+    line-height: 2vh;
+    cursor: pointer;
+}
+
+.loop {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 65%;
+    cursor: pointer;
+}
+
+.normal {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 70%;
+    cursor: pointer;
+}
+
+.random {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 75%;
+    cursor: pointer;
+}
+
+.play_select {
+    width: 2vh;
+    margin: 1vh 1vh;
+}
+
+.music_list {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 2vh 2vh 0 0;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    bottom: -40vh;
+    left: 10vw;
+    padding: 1vh;
+    z-index: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 幼圆, 黑体;
+    color: gray;
+    line-height: 2vh;
+    overflow: scroll;
+    transition: bottom 0.3s 1ms, z-index 0s;
+}
+
+.music_list::-webkit-scrollbar {
+    display: none;
+}
+
+.music_p {
+    height: 4vh;
+    line-height: 4vh;
+    cursor: pointer;
+}
+
+.music_p:hover {
+    color: black;
+}
+
+.music_time {
+    width: 4vw;
+    height: 4vh;
+    border-radius: 1vh;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 32vw;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 幼圆, 黑体;
+    color: gray;
+    line-height: 2vh;
+}
+
+.volume {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 3vh;
+    left: 5%;
+    cursor: pointer;
+}
+
+.volume_list {
+    width: 4vh;
+    height: 21vh;
+    border-radius: 1vh 1vh 0 0;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    bottom: -21vh;
+    left: 5vw;
+    z-index: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 幼圆, 黑体;
+    color: gray;
+    line-height: 2vh;
+    transition: bottom 0.3s 1ms, z-index 0s;
+}
+
+.volume_ball {
+    width: 3vh;
+    height: 1vh;
+    border-radius: 0.5vh;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    margin-top: 2vh;
+    margin-left: 0.5vh;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2vh;
+}
+
+.volume_img {
+    width: 3vh;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+}
+
+.loading {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 1.5vh;
+    position: absolute;
+    background: #e6eef4;
+    box-shadow: inset 0.4vh 0.4vh 0.5vh #cdd4d9,
+    inset -0.4vh -0.4vh 0.5vh #ffffff;
+    top: 4vh;
+    left: 79vw;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 幼圆, 黑体;
+    color: gray;
+    line-height: 2vh;
+}
+
+.loading_ball {
+    width: 2vh;
+    height: 2vh;
+    border-radius: 1vh;
+    background: #e6eef4;
+    box-shadow: 0.4vh 0.4vh 0.5vh #cdd4d9,
+    -0.4vh -0.4vh 0.5vh #ffffff;
+    position: absolute;
+    bottom: 0.5vh;
+    left: 0;
+}
+
+.url_input {
+    border: none;
+    outline: none;
+    background: #e6eef4;
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+    height: 3vh;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    padding: 1vh;
+    border-radius: 1vh;
+    font-family: "Century Gothic", 幼圆;
+}
+
+.name_input {
+    border: none;
+    outline: none;
+    background: #e6eef4;
+    box-shadow: inset 0.5vh 0.5vh 0.5vh #cdd4d9,
+    inset -0.5vh -0.5vh 0.5vh #ffffff;
+    height: 3vh;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    padding: 1vh;
+    border-radius: 1vh;
+    font-family: "Century Gothic", 幼圆;
+}
+
+.submit {
+    margin: 1vw auto;
+    display: block;
+    border: none;
+    outline: none;
+    background: #e6eef4;
+    box-shadow: 0.5vh 0.5vh 0.5vh #cdd4d9,
+    -0.5vh -0.5vh 0.5vh #ffffff;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 1.5vh;
+    font-family: "Century Gothic", 幼圆;
+}
+
+.menu {
+    width: 10vh;
+    height: 5vh;
+    background: #e6eef4;
+    box-shadow: 0 0 3vh #cdd4d9;
+    position: absolute;
+    top: 0;
+    display: none;
+    font-family: "Century Gothic", 幼圆;
+    line-height: 5vh;
+    color: gray;
+    text-align: center;
+    cursor: pointer;
+}
+
+.table_link {
+    height: 6vw;
+}
+
+.target_img {
+    width: 1.5vw;
+}
+
