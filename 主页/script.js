@@ -70,7 +70,18 @@ if (min < 10) {
     min = "0" + min;
 }
 time.innerHTML = hour + ":" + min;
-
+setInterval(()=>{
+    date=new Date();
+    hour=date.getHours();
+    min=date.getMinutes();
+    if (hour < 10) {
+        hour = "0" + hour;
+    }
+    if (min < 10) {
+        min = "0" + min;
+    }
+    time.innerHTML = hour + ":" + min;
+},1000)
 //搜索框点击边长
 search_box.addEventListener("click", (e) => {
     search_box.style.width = "50vw";
@@ -455,7 +466,6 @@ volume_button.addEventListener("click", (e) => {
 })
 
 function process() {
-    console.log("ok")
     let time1 = audio.currentTime;
     let time2 = audio.duration;
     loading_ball.style.left = (time1 / time2) * (0.2 * document.documentElement.clientWidth - 0.02 * document.documentElement.clientHeight) + "px";
